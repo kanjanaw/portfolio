@@ -1,0 +1,39 @@
+body {
+  background-color: whitesmoke;
+}
+
+.grid-row {
+  width: 100%;
+  height: auto;
+  display: grid;
+  column-gap: 2.5vw;
+  row-gap: 2.5vw;
+  grid-template-columns: auto auto auto;
+}
+
+.card-decoration {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 1vw;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.badge-web {
+  background-color: #ff5739;
+}
+
+.badge-3D {
+  background-color: #27a3d9;
+}
+
+.badge-animation {
+  background-color: #894cc4;
+}
+.badge-svg {
+  background-color: rgb(248, 184, 45);
+}
+
+.active{
+    font-weight: bold;
+    font-style: italic;
+}
