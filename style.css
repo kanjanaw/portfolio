@@ -2,6 +2,11 @@ body {
   background-color: whitesmoke;
 }
 
+a, a:hover, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
 .grid-row {
   width: 100%;
   height: auto;
@@ -15,7 +20,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   padding: 1vw;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .badge-web {
