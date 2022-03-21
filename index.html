@@ -1,317 +1,461 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kanjana Suphaphong | Portfolio</title>
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    
-  </head>
-  <body>
-    <h1 class="display-1 text-center pt-5 mt-4 pb-4">MY WORK</h1>
 
-    <nav class="container nav nav-pills nav-fill mb-4 sticky-top">
-      <a class="nav-item nav-link active pointer" href="#" onclick="showAll()">ALL</a>
-      <a class="nav-item nav-link pointer" href="#" onclick="show3D()">3D MODELING & ANIMATION</a>
-      <a class="nav-item nav-link pointer" href="#" onclick="showWeb()">WEBSITE</a>
-      <a class="nav-item nav-link pointer" href="#" onclick="showDesign()">DESIGN</a>
-      <a class="nav-item nav-link pointer" href="#" onclick="showContact()">CONTACT ME</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanjana Suphaphong | Portfolio</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <div class="container pb-5 mb-5">
-      <div class="row grid-row">
+</head>
 
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="" alt="Okkotsu Yuta" />
-          <div class="card-body">
-            <h5 class="card-title">
-              Okkotsu Yuta
-              <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on -- March 2022</em
-            >
-          </div>
+<body>
+  <h1 class="display-1 text-center pt-5 pb-4">MY WORK</h1>
+
+  <nav class="container nav nav-pills nav-fill mb-4 sticky-top" style="z-index: 2;">
+    <a class="nav-item nav-link active pointer" href="#" onclick="showAll()">ALL</a>
+    <a class="nav-item nav-link pointer" href="#" onclick="show3D()">3D MODELING & ANIMATION</a>
+    <a class="nav-item nav-link pointer" href="#" onclick="showWeb()">WEBSITE</a>
+    <a class="nav-item nav-link pointer" href="#" onclick="showDesign()">DESIGN</a>
+    <a class="nav-item nav-link pointer" href="#" onclick="showContact()">CONTACT ME</a>
+  </nav>
+
+  <div class="container user-select-none">
+    <div class="grid-row g-0">
+
+      <a class="card card-decoration card-3d" href="#open-modal-yuta" id="yuta">
+        <img class="card-img-top" src="" alt="Okkotsu Yuta" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Okkotsu Yuta
+            <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on -- March 2022</em>
         </div>
-
-        <div class="card card-decoration card-web">
-          <img
-            class="card-img-top"
-            src="img/kasetmikam.png"
-            alt="Kaset(mi)kam"
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              เกษตร(มี)กรรม
-              <span class="badge badge-web rounded-pill">Website</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 15 Dec 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-web">
-          <img
-            class="card-img-top"
-            src="img/thehistoryoflight.jpg"
-            alt="The History of Light"
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              The History of Light
-              <span class="badge badge-web rounded-pill">Website</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 15 Dec 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="img/shoes.jpg" alt="Shoes" />
-          <div class="card-body">
-            <h5 class="card-title">
-              Shoes <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 13 Dec 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="img/joggerpants.jpg" alt="Jogger Pants" />
-          <div class="card-body">
-            <h5 class="card-title">
-              Jogger Pants
-              <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 13 Dec 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="img/uniformshirt.jpg" alt="Uniform Shirt" />
-          <div class="card-body">
-            <h5 class="card-title">
-              Uniform Shirt
-              <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 13 Dec 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="img/lefthandmale.jpg" alt="Left Male Hand" />
-          <div class="card-body">
-            <h5 class="card-title">
-              Left Male Hand
-              <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 13 Dec 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="img/sweetship.jpg" alt="Sweet Ship" />
-          <div class="card-body">
-            <h5 class="card-title blockquote">
-              Sweet Ship
-              <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
-              ONE PIECE.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 27 Sep 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-design">
-          <img class="card-img-top" src="img/bookism.jpg" alt="Bookism" />
-          <div class="card-body">
-            <h5 class="card-title">
-              Bookism <span class="badge badge-app rounded-pill">App</span>
-              <span class="badge badge-design rounded-pill">Design</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on -- Dec 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-design">
-          <img class="card-img-top" src="img/rmts.jpg" alt="RMTS" />
-          <div class="card-body">
-            <h5 class="card-title">
-              RMTS <span class="badge badge-web rounded-pill">Website</span>
-              <span class="badge badge-design rounded-pill">Design</span>
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on -- Dec 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="img/hinadoll.jpg" alt="Hina Doll" />
-          <div class="card-body">
-            <h5 class="card-title blockquote">
-              Hina Doll
-              <span class="badge badge-3d rounded-pill">3D Model</span>
-              <span class="badge badge-animation rounded-pill">Animation</span>
-            </h5>
-            <p class="card-text">
-              It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
-              ONE PIECE.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 02 May 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="" alt="Cat" />
-          <div class="card-body">
-            <h5 class="card-title blockquote">
-              Cat <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
-              ONE PIECE.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 02 May 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="" alt="Lantern" />
-          <div class="card-body">
-            <h5 class="card-title blockquote">
-              Lantern <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
-              ONE PIECE.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 02 May 2021</em
-            >
-          </div>
-        </div>
-
-        <div class="card card-decoration card-3d">
-          <img class="card-img-top" src="" alt="Airplane" />
-          <div class="card-body">
-            <h5 class="card-title blockquote">
-              Airplane <span class="badge badge-3d rounded-pill">3D Model</span>
-            </h5>
-            <p class="card-text">
-              It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
-              ONE PIECE.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 02 May 2021</em
-            >
-          </div>
-        </div>
-
-        
-        <div class="card card-decoration card-web">
-          <img
-            class="card-img-top"
-            src="img/osakacastle.png"
-            alt="Osaka Castle"
-          />
-          <div class="card-body">
-            <h5 class="card-title blockquote">
-              Osaka Castle
-              <span class="badge badge-svg rounded-pill">SVG</span>
-              <span class="badge badge-web rounded-pill">Website</span>
-            </h5>
-            <p class="card-text">
-              It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
-              ONE PIECE.
-            </p>
-            <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0"
-              >Published on 15 May 2020</em
-            >
+      </a>
+      <div id="open-modal-yuta" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#yuta" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Shoes" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/c41a6cf139c34e20a721fe5c8f0128ca/embed?autostart=1"> </iframe>
           </div>
         </div>
       </div>
-    </div>
 
-    <script src="script.js"></script>
-  </body>
+
+
+      <a class="card card-decoration card-web" href="#open-modal-kaset" id="kaset">
+        <img class="card-img-top" src="img/kasetmikam.png" alt="Kaset(mi)kam" />
+        <div class="card-body">
+          <h5 class="card-title">
+            เกษตร(มี)กรรม
+            <span class="badge badge-web rounded-pill">Website</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 15 Dec 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-kaset" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#kaset" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://kasetmikam.netlify.app/" target="_blank" class="btn btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://kasetmikam.netlify.app/"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-web" href="#open-modal-light" id="light">
+        <img class="card-img-top" src="img/thehistoryoflight.jpg" alt="The History of Light" />
+        <div class="card-body">
+          <h5 class="card-title">
+            The History of Light
+            <span class="badge badge-web rounded-pill">Website</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 15 Dec 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-light" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#light" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://thehistoryoflight.netlify.app/" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://thehistoryoflight.netlify.app/"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-shoes" id="shoes">
+        <img class="card-img-top" src="img/shoes.jpg" alt="Shoes" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Shoes <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 13 Dec 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-shoes" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#shoes" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://skfb.ly/otEYK" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Shoes" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/c41a6cf139c34e20a721fe5c8f0128ca/embed?autostart=1"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-jogger" id="jogger">
+        <img class="card-img-top" src="img/joggerpants.jpg" alt="Jogger Pants" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Jogger Pants
+            <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 13 Dec 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-jogger" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#jogger" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://skfb.ly/otEXJ" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Jogger Pants" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/fbaec358665148c584113296cfc0da2d/embed?autostart=1"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-shirt" id="shirt">
+        <img class="card-img-top" src="img/uniformshirt.jpg" alt="Uniform Shirt" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Uniform Shirt
+            <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 13 Dec 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-shirt" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#shirt" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://skfb.ly/otESK" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Uniform Shirt" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/0e6899ad52de4ccb8d7e111a040a1a98/embed?autostart=1"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-hand" id="hand">
+        <img class="card-img-top" src="img/lefthandmale.jpg" alt="Left Male Hand" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Left Male Hand
+            <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 13 Dec 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-hand" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#hand" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://skfb.ly/otEPM" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Left Hand Male" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/bb344c852aad4617b878f99cc3ccd478/embed?autostart=1"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-ship" id="ship">
+        <img class="card-img-top" src="img/sweetship.jpg" alt="Sweet Ship" />
+        <div class="card-body">
+          <h5 class="card-title blockquote">
+            Sweet Ship
+            <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
+            ONE PIECE.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 27 Sep 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-ship" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#ship" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://skfb.ly/otEoq" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Sweet Ship" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/499a40b6cf064157a813a42b64c26da0/embed?autostart=1"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-design" href="#open-modal-bookism" id="bookism">
+        <img class="card-img-top" src="img/bookism.jpg" alt="Bookism" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Bookism <span class="badge badge-app rounded-pill">App</span>
+            <span class="badge badge-design rounded-pill">Design</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on -- Dec 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-bookism" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#bookism" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://1ozbb6.axshare.com/" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://1ozbb6.axshare.com/"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-design" href="#open-modal-rmts" id="rmts">
+        <img class="card-img-top" src="img/rmts.jpg" alt="RMTS" />
+        <div class="card-body">
+          <h5 class="card-title">
+            RMTS <span class="badge badge-web rounded-pill">Website</span>
+            <span class="badge badge-design rounded-pill">Design</span>
+          </h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on -- Dec 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-rmts" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#rmts" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://www.figma.com/file/TZ1x82SuKXdTKM9CZABn6S/RMTS?node-id=0%3A1" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe 
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTZ1x82SuKXdTKM9CZABn6S%2FRMTS%3Fnode-id%3D0%253A1"
+              ></iframe>
+          </div>
+        </div>
+      </div>
+
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-hina" id="hina">
+        <img class="card-img-top" src="img/hinadoll.jpg" alt="Hina Doll" />
+        <div class="card-body">
+          <h5 class="card-title blockquote">
+            Hina Doll
+            <span class="badge badge-3d rounded-pill">3D Model</span>
+            <span class="badge badge-animation rounded-pill">Animation</span>
+          </h5>
+          <p class="card-text">
+            It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
+            ONE PIECE.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 02 May 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-hina" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#hina" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://www.youtube.com/embed/htEukc-EtDo" target="_blank" class="btn-new-tab text-white">Open in New Tab
+            &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/htEukc-EtDo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-cat" id="cat">
+        <img class="card-img-top" src="" alt="Cat" />
+        <div class="card-body">
+          <h5 class="card-title blockquote">
+            Cat <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
+            ONE PIECE.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 02 May 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-cat" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#cat" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Sweet Ship" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/499a40b6cf064157a813a42b64c26da0/embed?autostart=1"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-lantern" id="lantern">
+        <img class="card-img-top" src="" alt="Lantern" />
+        <div class="card-body">
+          <h5 class="card-title blockquote">
+            Lantern <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
+            ONE PIECE.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 02 May 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-lantern" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#lantern" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Sweet Ship" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/499a40b6cf064157a813a42b64c26da0/embed?autostart=1"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-3d" href="#open-modal-airplane" id="airplane">
+        <img class="card-img-top" src="" alt="Airplane" />
+        <div class="card-body">
+          <h5 class="card-title blockquote">
+            Airplane <span class="badge badge-3d rounded-pill">3D Model</span>
+          </h5>
+          <p class="card-text">
+            It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
+            ONE PIECE.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 02 May 2021</em>
+        </div>
+      </a>
+      <div id="open-modal-airplane" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#airplane" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe title="Sweet Ship" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+              execution-while-out-of-viewport execution-while-not-rendered web-share
+              src="https://sketchfab.com/models/499a40b6cf064157a813a42b64c26da0/embed?autostart=1"> </iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card card-decoration card-web" href="#open-modal-osaka" id="osaka">
+        <img class="card-img-top" src="img/osakacastle.png" alt="Osaka Castle" />
+        <div class="card-body">
+          <h5 class="card-title blockquote">
+            Osaka Castle
+            <span class="badge badge-svg rounded-pill">SVG</span>
+            <span class="badge badge-web rounded-pill">Website</span>
+          </h5>
+          <p class="card-text">
+            It was inspired by Queen Mama Chanter (Big Mom pirate's ship) from
+            ONE PIECE.
+          </p>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 15 May 2020</em>
+        </div>
+      </a>
+      <div id="open-modal-osaka" class="modal-window">
+        <div class="d-flex flex-column justify-content-center">
+          <a href="#osaka" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
+          <a href="https://osaka-castle-svg.netlify.app/" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+              class="bi bi-box-arrow-up-right"></i></a>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://osaka-castle-svg.netlify.app/"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
