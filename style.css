@@ -1,11 +1,13 @@
 body {
   background-color: whitesmoke;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
-
 a, a:hover, a:visited{
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
+
 
 .grid-row {
   width: 100%;
@@ -19,6 +21,7 @@ a, a:hover, a:visited{
 .card-decoration {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   padding: 1vw;
+  color: black;
   cursor: pointer;
   border-radius: 15px;
 }
@@ -41,12 +44,98 @@ a, a:hover, a:visited{
 .badge-design{
   background-color:#894cc4;
 }
-
 .active{
     font-weight: bold;
     font-style: italic;
 }
-
 .pointer{
   cursor: pointer;
+}
+.modal-window {
+  position: fixed;
+  background-color: rgba(80, 80, 80, 0.25);
+  backdrop-filter: blur(8px);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 65vw;
+  height: auto;
+  max-height: 90vh;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.5em;
+  background: white;
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window p {
+  font-size: 1vw;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+/* width */
+div::-webkit-scrollbar {
+  width: 12px;
+}
+/* Handle */
+div::-webkit-scrollbar-thumb {
+  background: #282828;
+  border-radius: 10px;
+}
+/* Handle on hover */
+div::-webkit-scrollbar-thumb:hover {
+  background: #a9a9a9;
+}
+.modal-close {
+  color: #ff3415;
+  position: absolute;
+  font-size: 1.5vw;
+  right: 10px;
+  text-align: center;
+  top: 15px;
+  cursor: pointer;
+}
+.modal-close:hover {
+  color: black;
+}
+.modal-window > div {
+  border-radius: 1rem;
+  color: black;
+}
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.btn-new-tab, .btn-new-tab:hover{
+  width: calc(100% / 3);
+  height: auto;
+  padding: .75vw;
+  color: white;
+  background-color:#202124;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 1em 1em 0 0;
+  text-align: center;
+  border: none;
+  justify-self: end;
+}
+
+.btn:focus{
+  box-shadow: none;
 }
