@@ -28,21 +28,23 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    
   </head>
   <body>
     <h1 class="display-1 text-center pt-5 mt-4 pb-4">MY WORK</h1>
 
-    <nav class="container nav nav-pills nav-fill mb-5 sticky-top">
-      <a class="nav-item nav-link active" href="#">ALL</a>
-      <a class="nav-item nav-link" href="#">3D MODELING & ANIMATION</a>
-      <a class="nav-item nav-link" href="#">WEBSITE</a>
-      <a class="nav-item nav-link" href="#">DESIGN</a>
-      <a class="nav-item nav-link" href="#">OTHER</a>
+    <nav class="container nav nav-pills nav-fill mb-4 sticky-top">
+      <a class="nav-item nav-link active pointer" href="#" onclick="showAll()">ALL</a>
+      <a class="nav-item nav-link pointer" href="#" onclick="show3D()">3D MODELING & ANIMATION</a>
+      <a class="nav-item nav-link pointer" href="#" onclick="showWeb()">WEBSITE</a>
+      <a class="nav-item nav-link pointer" href="#" onclick="showDesign()">DESIGN</a>
+      <a class="nav-item nav-link pointer" href="#" onclick="showContact()">CONTACT ME</a>
     </nav>
 
     <div class="container pb-5 mb-5">
       <div class="row grid-row">
-        <div class="card card-decoration">
+
+        <div class="card card-decoration card-3d">
           <img class="card-img-top" src="" alt="Okkotsu Yuta" />
           <div class="card-body">
             <h5 class="card-title">
@@ -59,7 +61,7 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-web">
           <img
             class="card-img-top"
             src="img/kasetmikam.png"
@@ -80,7 +82,7 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-web">
           <img
             class="card-img-top"
             src="img/thehistoryoflight.jpg"
@@ -101,8 +103,8 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
-          <img class="card-img-top" src="" alt="Shoes" />
+        <div class="card card-decoration card-3d">
+          <img class="card-img-top" src="img/shoes.jpg" alt="Shoes" />
           <div class="card-body">
             <h5 class="card-title">
               Shoes <span class="badge badge-3d rounded-pill">3D Model</span>
@@ -117,8 +119,8 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
-          <img class="card-img-top" src="" alt="Jogger Pants" />
+        <div class="card card-decoration card-3d">
+          <img class="card-img-top" src="img/joggerpants.jpg" alt="Jogger Pants" />
           <div class="card-body">
             <h5 class="card-title">
               Jogger Pants
@@ -134,8 +136,8 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
-          <img class="card-img-top" src="" alt="Uniform Shirt" />
+        <div class="card card-decoration card-3d">
+          <img class="card-img-top" src="img/uniformshirt.jpg" alt="Uniform Shirt" />
           <div class="card-body">
             <h5 class="card-title">
               Uniform Shirt
@@ -151,11 +153,11 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
-          <img class="card-img-top" src="" alt="Male Hand" />
+        <div class="card card-decoration card-3d">
+          <img class="card-img-top" src="img/lefthandmale.jpg" alt="Left Male Hand" />
           <div class="card-body">
             <h5 class="card-title">
-              Male Hand
+              Left Male Hand
               <span class="badge badge-3d rounded-pill">3D Model</span>
             </h5>
             <p class="card-text">
@@ -168,7 +170,7 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-3d">
           <img class="card-img-top" src="img/sweetship.jpg" alt="Sweet Ship" />
           <div class="card-body">
             <h5 class="card-title blockquote">
@@ -185,12 +187,12 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-design">
           <img class="card-img-top" src="img/bookism.jpg" alt="Bookism" />
           <div class="card-body">
             <h5 class="card-title">
-              Bookism <span class="badge badge-web rounded-pill">App</span>
-              <span class="badge badge-web rounded-pill">Design</span>
+              Bookism <span class="badge badge-app rounded-pill">App</span>
+              <span class="badge badge-design rounded-pill">Design</span>
             </h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -202,12 +204,12 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-design">
           <img class="card-img-top" src="img/rmts.jpg" alt="RMTS" />
           <div class="card-body">
             <h5 class="card-title">
               RMTS <span class="badge badge-web rounded-pill">Website</span>
-              <span class="badge badge-web rounded-pill">Design</span>
+              <span class="badge badge-design rounded-pill">Design</span>
             </h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -219,7 +221,7 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-3d">
           <img class="card-img-top" src="img/hinadoll.jpg" alt="Hina Doll" />
           <div class="card-body">
             <h5 class="card-title blockquote">
@@ -237,7 +239,7 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-3d">
           <img class="card-img-top" src="" alt="Cat" />
           <div class="card-body">
             <h5 class="card-title blockquote">
@@ -253,7 +255,7 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-3d">
           <img class="card-img-top" src="" alt="Lantern" />
           <div class="card-body">
             <h5 class="card-title blockquote">
@@ -269,7 +271,7 @@
           </div>
         </div>
 
-        <div class="card card-decoration">
+        <div class="card card-decoration card-3d">
           <img class="card-img-top" src="" alt="Airplane" />
           <div class="card-body">
             <h5 class="card-title blockquote">
@@ -286,7 +288,7 @@
         </div>
 
         
-        <div class="card card-decoration">
+        <div class="card card-decoration card-web">
           <img
             class="card-img-top"
             src="img/osakacastle.png"
@@ -309,5 +311,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
