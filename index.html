@@ -24,21 +24,24 @@
 </head>
 
 <body>
-  <h1 class="display-1 text-center pt-5 pb-4">MY WORK</h1>
+  <div class="container-fluid" style="background-color: black;">
+    <h1 class="display-1 text-center pb-4 text-white" style="padding-top: 10vh;">MY WORK</h1>
+  </div>
 
-  <nav class="container nav nav-pills nav-fill mb-4 sticky-top" style="z-index: 2;">
-    <a class="nav-item nav-link active pointer" href="#" onclick="showAll()">ALL</a>
+
+  <nav class="container nav nav-pills nav-fill mb-4 sticky-top nav-header">
+    <a class="nav-item nav-link item-active pointer" href="#" onclick="showAll()">ALL</a>
     <a class="nav-item nav-link pointer" href="#" onclick="show3D()">3D MODELING & ANIMATION</a>
     <a class="nav-item nav-link pointer" href="#" onclick="showWeb()">WEBSITE</a>
     <a class="nav-item nav-link pointer" href="#" onclick="showDesign()">DESIGN</a>
-    <a class="nav-item nav-link pointer" href="#" onclick="showContact()">CONTACT ME</a>
+    <a class="nav-item nav-link pointer" href="#" >CONTACT ME</a>
   </nav>
 
   <div class="container user-select-none">
     <div class="grid-row g-0">
 
       <a class="card card-decoration card-3d" href="#open-modal-yuta" id="yuta">
-        <img class="card-img-top" src="" alt="Okkotsu Yuta" />
+        <img class="card-img-top" src="img/yuta.jpg" alt="Okkotsu Yuta" />
         <div class="card-body">
           <h5 class="card-title">
             Okkotsu Yuta
@@ -48,18 +51,18 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on -- March 2022</em>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 23 March 2022</em>
         </div>
       </a>
       <div id="open-modal-yuta" class="modal-window">
         <div class="d-flex flex-column justify-content-center">
           <a href="#yuta" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
-          <a href="" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
+          <a href="https://skfb.ly/otHpr" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
               class="bi bi-box-arrow-up-right"></i></a>
           <div class="ratio ratio-16x9">
-            <iframe title="Shoes" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+            <iframe title="Okkotsu Yuta" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
               execution-while-out-of-viewport execution-while-not-rendered web-share
-              src="https://sketchfab.com/models/c41a6cf139c34e20a721fe5c8f0128ca/embed?autostart=1"> </iframe>
+              src="https://sketchfab.com/models/9d6487aceef84aa09b1fdfffef1f38fe/embed?autostart=1"> </iframe>
           </div>
         </div>
       </div>
@@ -83,8 +86,8 @@
       <div id="open-modal-kaset" class="modal-window">
         <div class="d-flex flex-column justify-content-center">
           <a href="#kaset" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
-          <a href="https://kasetmikam.netlify.app/" target="_blank" class="btn btn-new-tab text-white">Open in New Tab &nbsp;<i
-              class="bi bi-box-arrow-up-right"></i></a>
+          <a href="https://kasetmikam.netlify.app/" target="_blank" class="btn btn-new-tab text-white">Open in New Tab
+            &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
           <div class="ratio ratio-16x9">
             <iframe src="https://kasetmikam.netlify.app/"></iframe>
           </div>
@@ -109,8 +112,8 @@
       <div id="open-modal-light" class="modal-window">
         <div class="d-flex flex-column justify-content-center">
           <a href="#light" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
-          <a href="https://thehistoryoflight.netlify.app/" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
-              class="bi bi-box-arrow-up-right"></i></a>
+          <a href="https://thehistoryoflight.netlify.app/" target="_blank" class="btn-new-tab text-white">Open in New
+            Tab &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
           <div class="ratio ratio-16x9">
             <iframe src="https://thehistoryoflight.netlify.app/"></iframe>
           </div>
@@ -268,7 +271,7 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on -- Dec 2021</em>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 28 Nov 2021</em>
         </div>
       </a>
       <div id="open-modal-bookism" class="modal-window">
@@ -294,18 +297,17 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on -- Dec 2021</em>
+          <em class="blockquote-footer mt-0 mb-0 pb-0 pt-0">Published on 21 May 2021</em>
         </div>
       </a>
       <div id="open-modal-rmts" class="modal-window">
         <div class="d-flex flex-column justify-content-center">
           <a href="#rmts" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
-          <a href="https://www.figma.com/file/TZ1x82SuKXdTKM9CZABn6S/RMTS?node-id=0%3A1" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
-              class="bi bi-box-arrow-up-right"></i></a>
+          <a href="https://www.figma.com/file/TZ1x82SuKXdTKM9CZABn6S/RMTS?node-id=0%3A1" target="_blank"
+            class="btn-new-tab text-white">Open in New Tab &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
           <div class="ratio ratio-16x9">
-            <iframe 
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTZ1x82SuKXdTKM9CZABn6S%2FRMTS%3Fnode-id%3D0%253A1"
-              ></iframe>
+            <iframe
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTZ1x82SuKXdTKM9CZABn6S%2FRMTS%3Fnode-id%3D0%253A1"></iframe>
           </div>
         </div>
       </div>
@@ -330,7 +332,8 @@
       <div id="open-modal-hina" class="modal-window">
         <div class="d-flex flex-column justify-content-center">
           <a href="#hina" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
-          <a href="https://www.youtube.com/embed/htEukc-EtDo" target="_blank" class="btn-new-tab text-white">Open in New Tab
+          <a href="https://www.youtube.com/embed/htEukc-EtDo" target="_blank" class="btn-new-tab text-white">Open in New
+            Tab
             &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
           <div class="ratio ratio-16x9">
             <iframe src="https://www.youtube.com/embed/htEukc-EtDo"
@@ -343,7 +346,7 @@
 
 
       <a class="card card-decoration card-3d" href="#open-modal-cat" id="cat">
-        <img class="card-img-top" src="" alt="Cat" />
+        <img class="card-img-top" src="https://placehold.it/1536x768" alt="Cat" />
         <div class="card-body">
           <h5 class="card-title blockquote">
             Cat <span class="badge badge-3d rounded-pill">3D Model</span>
@@ -371,7 +374,7 @@
 
 
       <a class="card card-decoration card-3d" href="#open-modal-lantern" id="lantern">
-        <img class="card-img-top" src="" alt="Lantern" />
+        <img class="card-img-top" src="https://placehold.it/1536x768" alt="Lantern" />
         <div class="card-body">
           <h5 class="card-title blockquote">
             Lantern <span class="badge badge-3d rounded-pill">3D Model</span>
@@ -398,7 +401,7 @@
 
 
       <a class="card card-decoration card-3d" href="#open-modal-airplane" id="airplane">
-        <img class="card-img-top" src="" alt="Airplane" />
+        <img class="card-img-top" src="https://placehold.it/1536x768" alt="Airplane" />
         <div class="card-body">
           <h5 class="card-title blockquote">
             Airplane <span class="badge badge-3d rounded-pill">3D Model</span>
@@ -442,18 +445,18 @@
       <div id="open-modal-osaka" class="modal-window">
         <div class="d-flex flex-column justify-content-center">
           <a href="#osaka" title="Close" class="btn modal-close"><i class="bi bi-x-circle-fill"></i></a>
-          <a href="https://osaka-castle-svg.netlify.app/" target="_blank" class="btn-new-tab text-white">Open in New Tab &nbsp;<i
-              class="bi bi-box-arrow-up-right"></i></a>
+          <a href="https://osaka-castle-svg.netlify.app/" target="_blank" class="btn-new-tab text-white">Open in New Tab
+            &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
           <div class="ratio ratio-16x9">
             <iframe src="https://osaka-castle-svg.netlify.app/"></iframe>
           </div>
         </div>
       </div>
 
-
-
     </div>
   </div>
+
+ 
 
   <script src="script.js"></script>
 </body>
