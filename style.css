@@ -10,12 +10,9 @@ a, a:hover, a:visited{
 
 
 .grid-row {
-  width: 100%;
-  height: auto;
   display: grid;
-  column-gap: 4%;
-  row-gap: 4%;
   grid-template-columns: calc(92% / 3) calc(92% / 3) calc(92% / 3);
+  column-gap: 4%;
 }
 
 .card-decoration {
@@ -24,6 +21,17 @@ a, a:hover, a:visited{
   color: black;
   cursor: pointer;
   border-radius: 15px;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+
+}
+
+.nav-header{
+  transition: all 0.3s;
+  /* color: var(--menutext); */
+  backdrop-filter: blur(10px);
+  z-index: 2;   background-color: hsla(0, 100%, 100%, 0.75); 
+  border-bottom: .5px solid black;
 }
 
 .badge-web {
@@ -44,9 +52,11 @@ a, a:hover, a:visited{
 .badge-design{
   background-color:#894cc4;
 }
-.active{
+.item-active{
     font-weight: bold;
     font-style: italic;
+    text-decoration: underline;
+    color: #202124;
 }
 .pointer{
   cursor: pointer;
