@@ -80,6 +80,9 @@ a:visited, a:active{
 .badge-design{
   background-color:#894cc4;
 }
+.badge-graphic{
+  background-color:#ff7eba;
+}
 .item-active{
     font-weight: bold;
     color: #202124;
@@ -174,4 +177,9 @@ div::-webkit-scrollbar-thumb:hover {
 
 .btn:focus{
   box-shadow: none;
+}
+
+.img-frame{
+  width: auto;
+  height: 100%;
 }
